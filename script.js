@@ -13,6 +13,7 @@ const newsletterForm = document.getElementById("newsletterForm");
 const emailInput = document.getElementById("emailInput");
 const formMsg = document.getElementById("formMsg");
 const comingTrack = document.querySelector(".coming-track");
+const sections = [...document.querySelectorAll("section[id]")];
 
 function showSlide(index) {
   currentSlide = (index + slides.length) % slides.length;
@@ -55,6 +56,22 @@ function updateHeaderState() {
   header.classList.toggle("scrolled", window.scrollY > triggerPoint);
 }
 
+function updateActiveNavLink() {
+  if (!sections.length || !navLinks.length) return;
+
+  const marker = window.scrollY + header.offsetHeight + 80;
+  let currentSectionId = sections[0].id;
+
+  sections.forEach((section) => {
+    if (marker >= section.offsetTop) currentSectionId = section.id;
+  });
+
+  navLinks.forEach((link) => {
+    const isActive = link.getAttribute("href") === `#${currentSectionId}`;
+    link.classList.toggle("active", isActive);
+  });
+}
+
 menuBtn.addEventListener("click", () => {
   nav.classList.toggle("open");
 });
@@ -90,10 +107,18 @@ if (dotsWrap) {
   });
 }
 
-window.addEventListener("scroll", updateHeaderState);
-window.addEventListener("resize", updateHeaderState);
+window.addEventListener("scroll", () => {
+  updateHeaderState();
+  updateActiveNavLink();
+});
+
+window.addEventListener("resize", () => {
+  updateHeaderState();
+  updateActiveNavLink();
+});
 
 showSlide(0);
 startAutoPlay();
 startComingAutoScroll();
 updateHeaderState();
+updateActiveNavLink();
