@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo"><i class="fa-solid fa-clapperboard"></i> Movies</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#coming">Coming</a>
+        <a href="#newsletter">Newsletter</a>
+      </nav>
+
+      <a href="#" class="signin-btn">Sign In</a>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-slide active" style="background-image: url('img/home1.jpg');">
+      <div class="container hero-content">
+        <p class="hero-kicker">MARVEL UNIVERSE</p>
+        <h1>Spider-Man:<br>Far from Home</h1>
+        <a href="#movies" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="hero-slide" style="background-image: url('img/home2.jpg');">
+      <div class="container hero-content">
+        <p class="hero-kicker">MARVEL UNIVERSE</p>
+        <h1>Avengers:<br>Infinity War</h1>
+        <a href="#movies" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="hero-slide" style="background-image: url('img/home3.jpg');">
+      <div class="container hero-content">
+        <p class="hero-kicker">MARVEL UNIVERSE</p>
+        <h1>Venom: Let There<br>Be Carnage</h1>
+        <a href="#movies" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <a href="#movies" class="play-btn" aria-label="Play trailer"><i class="fa-solid fa-play"></i></a>
+
+    <div class="hero-dots" id="heroDots">
+      <button class="dot active" aria-label="slide 1"></button>
+      <button class="dot" aria-label="slide 2"></button>
+      <button class="dot" aria-label="slide 3"></button>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" id="movies">
+      <div class="container">
+        <h2 class="section-title">Opening This Week</h2>
+        <div class="movie-grid">
+          <article class="movie-card"><img src="img/m1.jpg" alt="Venom"><h3>Venom</h3><p>120 min | Action</p></article>
+          <article class="movie-card"><img src="img/m2.jpg" alt="Dunkirk"><h3>Dunkirk</h3><p>120 min | Adventure</p></article>
+          <article class="movie-card"><img src="img/m3.jpg" alt="Batman Vs Superman"><h3>Batman Vs Superman</h3><p>120 min | Thriller</p></article>
+          <article class="movie-card"><img src="img/m4.jpg" alt="John Wick 2"><h3>John Wick 2</h3><p>120 min | Adventure</p></article>
+          <article class="movie-card"><img src="img/m5.jpg" alt="Aquaman"><h3>Aquaman</h3><p>120 min | Action</p></article>
+          <article class="movie-card"><img src="img/m6.jpg" alt="Black Panther"><h3>Black Panther</h3><p>120 min | Thriller</p></article>
+          <article class="movie-card"><img src="img/m7.jpg" alt="Thor"><h3>Thor</h3><p>120 min | Adventure</p></article>
+          <article class="movie-card"><img src="img/m8.png" alt="Bumblebee"><h3>Bumblebee</h3><p>120 min | Thriller</p></article>
+          <article class="movie-card"><img src="img/m9.jpg" alt="Mortal Engines"><h3>Mortal Engines</h3><p>120 min | Action</p></article>
+          <article class="movie-card"><img src="img/m10.jpg" alt="UnderWorld Blood Wars"><h3>UnderWorld Blood Wars</h3><p>120 min | Action</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="coming">
+      <div class="container">
+        <h2 class="section-title">Coming Soon</h2>
+        <div class="coming-track">
+          <article class="movie-card coming-card"><img src="img/coming1.jpg" alt="Coming 1"><h3>Guardians of the Galaxy</h3><p>120 min | Thriller</p></article>
+          <article class="movie-card coming-card"><img src="img/coming2.jpg" alt="Coming 2"><h3>Jhony English</h3><p>120 min | Action</p></article>
+          <article class="movie-card coming-card"><img src="img/coming3.jpg" alt="Coming 3"><h3>Warcraft</h3><p>120 min | Adventure</p></article>
+          <article class="movie-card coming-card"><img src="img/coming4.jpg" alt="Coming 4"><h3>Rampage</h3><p>120 min | Thriller</p></article>
+          <article class="movie-card coming-card"><img src="img/coming5.jpg" alt="Coming 5"><h3>Iron Lady</h3><p>120 min | Adventure</p></article>
+          <article class="movie-card coming-card"><img src="img/coming6.jpeg" alt="Coming 6"><h3>Doctor Strange</h3><p>120 min | Thriller</p></article>
+          <article class="movie-card coming-card"><img src="img/coming7.jpg" alt="Coming 7"><h3>Captain Marvel</h3><p>120 min | Adventure</p></article>
+          <article class="movie-card coming-card"><img src="img/coming8.jpg" alt="Coming 8"><h3>Black Widow</h3><p>120 min | Thriller</p></article>
+          <article class="movie-card coming-card"><img src="img/coming9.jpg" alt="Coming 9"><h3>Ant-Man</h3><p>120 min | Action</p></article>
+          <article class="movie-card coming-card"><img src="img/coming10.jpg" alt="Coming 10"><h3>Guardians of the Galaxy</h3><p>120 min | Thriller</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section newsletter" id="newsletter">
+      <div class="container newsletter-wrap">
+        <h2>Subscribe To Get <br>Newsletter</h2>
+        <form id="newsletterForm">
+          <input id="emailInput" type="email" placeholder="Enter Email..." required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="formMsg" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <a href="#home" class="logo"><i class="fa-solid fa-clapperboard"></i> Movies</a>
+      <div class="footer-social">
+        <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <p class="footer-copy">Made with Love ❤️ by Abdul Basit</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
