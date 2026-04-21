@@ -117,6 +117,10 @@ window.addEventListener("resize", () => {
   updateActiveNavLink();
 });
 
+
+//  Here the problem is that the when the user click or scroll the coming soon section then there is not stoping of the icons sliding
+//  also in the navigation when the user opens there is extra line with after the coming section 
+
 showSlide(0);
 startAutoPlay();
 startComingAutoScroll();

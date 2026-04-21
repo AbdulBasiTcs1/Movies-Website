@@ -315,6 +315,9 @@ img {
 
 .coming-track .movie-card:hover {
   transform: translateY(-12px) scale(1.01);
+  /* flex: 0 0 none; */
+
+
 }
 
 .newsletter {
